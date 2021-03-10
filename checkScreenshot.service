@@ -1,0 +1,15 @@
+[Unit]
+Description=checkScreenshot
+
+[Service]
+# Environment=XAUTHORITY= - obecnie nie ma żadnego pliku
+Type=simple
+ExecStart=/home/devel/checkScreenshot.sh
+WorkingDirectory=/home/devel/Scripts_screenshoot
+Restart=always
+#Komentu bo chce dać root uprawnienia
+# User=devel
+# Group=devel
+
+[Install]
+# WantedBy=graphical.target - zakladam ze sie nie przyda
