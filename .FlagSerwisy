@@ -1,0 +1,55 @@
+#!/bin/bash
+
+alias sctl='sudo systemctl'
+alias libsystem='cd /lib/systemd/system'
+LIBSYSTEM='/lib/systemd/system'
+alias ls-l-rt="ls -l -rt"
+
+function sctlstart
+{
+  type sctlstart
+  sudo systemctl start "$1"
+}
+
+function sctlst
+{
+  type sctlst
+  sudo systemctl status "$1"
+}
+
+function sctlstop
+{
+  type sctlstop
+  sudo systemctl stop "$1"
+}
+
+function sctlreset
+{
+  type sctlreset
+  sudo systemctl stop "$1"
+  sudo systemctl start "$1"
+}
+
+function sctlenable
+{
+  type sctlenable
+  sudo systemctl enable "$1"
+}
+
+function sctldisable
+{
+  type sctldisable
+  sudo systemctl disable "$1"
+}
+
+function sctldar
+{
+  type sctldar
+  sudo systemctl daemon-reload
+}
+
+function jctlf
+{
+  journalctl -u "$1" -f
+}
+
