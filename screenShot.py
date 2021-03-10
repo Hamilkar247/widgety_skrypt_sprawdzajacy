@@ -82,14 +82,13 @@ if __name__ == "__main__":
             time.sleep(20)
             screenshot = driver.save_screenshot('widget_piaseczno.png') #'/home/devel/widget_piaseczno.png')
             print(t , " ScreenShoot: Widget Piaseczno")
-            #tymczasowe zakomentowanie postowania
-            #session = Session()
-            #response = session.post(
-            #        url='http://czujnikimiejskie.pl/apipost/add/measurement',
-            #        data={"sn":"3000","a":"1","w":"0","z":"0"},
-            #        headers={'Connection':'close'}
-            #)
-            #print("Wyslano")
+            session = Session()
+            response = session.post(
+                    url='http://czujnikimiejskie.pl/apipost/add/measurement',
+                    data={"sn":"3005","a":"1","w":"0","z":"0"}, ## DOZMIENIENIA NA 3000
+                    headers={'Connection':'close'}
+            )
+            print("Wyslano")
             time.sleep(600)
     driver.quit()
     display.stop()
