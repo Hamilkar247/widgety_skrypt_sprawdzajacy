@@ -1,4 +1,7 @@
 {
-  "__comment__": "program sprawdzający działanie screenshot.py",
-      "timeToCheckScreenshot" : 400
+  "__comment__": "CheckScreenshot - program sprawdzający działanie screenshot.py",
+      "timeToCheckScreenshot": 700,
+  "__comment__": "screenshot - program do robienia snapów",
+      "timeToScreenshot": 600,
+      "port": 3005
 }
