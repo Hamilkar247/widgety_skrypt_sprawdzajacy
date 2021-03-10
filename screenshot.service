@@ -8,6 +8,7 @@ Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
 ExecStart=/usr/bin/python3 /home/devel/Scripts_screenshoot/screenShot.py
+WorkingDirectory=/home/devel/Scripts/Scripts_screenshoot
 Restart=on-abort
 User=devel
 Group=devel
